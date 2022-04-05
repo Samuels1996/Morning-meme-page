@@ -1,3 +1,16 @@
+
+const food = [
+    "Rice with spam",
+    "Rice with Kimchi stew",
+    "Rice with mapo tofu",
+    "Rice with seaweed soup",
+    "Sushi",
+    "Rice with ramen",
+    "Omelette Rice",
+    "Protien Bar",
+];
+
+
 feature/news
 function init() {
     renderArticle();
@@ -120,3 +133,4 @@ function saveScores(Kscore, Tscore) {
 getRandomQuote();
 quoteBox.on('click', 'button', answer)
 main
+
