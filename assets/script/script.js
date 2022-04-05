@@ -11,9 +11,7 @@ const food = [
 ];
 
 
-feature/news
-function init() {
-    renderArticle();
+function renderArticle() {
     //if random number greater than 50, run this function.
     //if less than, run the other function
 }
@@ -52,7 +50,6 @@ function renderArticle() {
 
 //function renderOnionArticle();
 
-init();
 
 var quoteBox = $('#quoteBox');
 var person;
@@ -132,5 +129,6 @@ function saveScores(Kscore, Tscore) {
 }
 getRandomQuote();
 quoteBox.on('click', 'button', answer)
-main
+
+renderArticle();
 
