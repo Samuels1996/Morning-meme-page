@@ -1,0 +1,78 @@
+var quoteBox = $('#quoteBox');
+var person;
+var TrumpScoreCounter = localStorage.getItem('trump') || 0;
+var SaintPabloScoreCounter = localStorage.getItem('kanye') || 0;
+// Pulls a randomly Yeezus quote 
+function KanyeQuote () {
+    fetch("https://api.kanye.rest/")
+    .then(response => response.json())
+    .then(data => {
+        displayQuote(data.quote, 'Kanye');
+    })
+}
+// Pull a random Donald Trump
+function TrumpQuote () {
+    fetch("https://api.whatdoestrumpthink.com/api/v1/quotes/random")
+    .then(response => response.json())
+    .then(data => {
+        displayQuote(data.message, 'Trump')
+    })
+}
+// Randomly calls  
+function getRandomQuote(){
+    var random = Math.floor(Math.random() * 2)
+    if (random === 0) {
+        KanyeQuote();
+    } else {
+        TrumpQuote();
+    }
+}
+function displayQuote(quote, speaker) {
+   
+    var quoteText = $('<h1>');
+    var YeezusBtn = $('<button>');
+    var TrumpBtn = $('<button>');
+
+    person = speaker;
+    quoteText.text(quote);
+    quoteText.addClass('m-3');
+    quoteBox.append(quoteText);
+
+    YeezusBtn.text('Kanye');
+    YeezusBtn.addClass('col-2 m-3 bg-primary');
+    quoteBox.append(YeezusBtn);
+
+    TrumpBtn.text('Trump');
+    TrumpBtn.addClass('col-2 m-3 bg-danger');
+    quoteBox.append(TrumpBtn);
+}
+function answer(e){
+
+    var scoreBox = $('<div>');
+    var SaintPabloScore = $('<h1>');
+    var TrumpScore = $('<h1>');
+    
+    var userAnswer = e.target.textContent;
+
+    if(userAnswer === person) {
+        if (person === "Kanye") {
+            SaintPabloScoreCounter ++;
+        } else {
+            TrumpScoreCounter ++;
+        }
+    } 
+    SaintPabloScore.text('Kanye: ' + SaintPabloScoreCounter);
+    TrumpScore.text('Trump: ' + TrumpScoreCounter);
+    scoreBox.append(SaintPabloScore,TrumpScore);
+    if(quoteBox.children().length < 4 ){
+        quoteBox.append(scoreBox);  
+    }
+    saveScores(SaintPabloScoreCounter,TrumpScoreCounter);
+}
+
+function saveScores(Kscore, Tscore) {
+    localStorage.setItem("trump", Tscore);
+    localStorage.setItem('kanye', Kscore);
+}
+getRandomQuote();
+quoteBox.on('click', 'button', answer)
