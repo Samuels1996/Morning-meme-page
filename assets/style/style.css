@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+
+>>>>>>> 01d41384c561efa8fa21c55ecec06dac7f3af534
 .btn {
     grid column: span 2;
     background-color: transparent;
@@ -24,4 +28,15 @@
 }
 body{
     background-color:white;
+<<<<<<< HEAD
+=======
+=======
+aside {
+    text-align: right;
+}
+
+aside h2 {
+    padding: 0px 30px;
+
+>>>>>>> 01d41384c561efa8fa21c55ecec06dac7f3af534
 }
