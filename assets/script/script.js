@@ -1,9 +1,8 @@
-feature/news
-function init() {
-    renderArticle();
+//feature/news
+    
     //if random number greater than 50, run this function.
     //if less than, run the other function
-}
+
 
 function renderArticle() {
     
@@ -39,7 +38,7 @@ function renderArticle() {
 
 //function renderOnionArticle();
 
-init();
+
 
 var quoteBox = $('#quoteBox');
 var person;
@@ -117,6 +116,7 @@ function saveScores(Kscore, Tscore) {
     localStorage.setItem("trump", Tscore);
     localStorage.setItem('kanye', Kscore);
 }
+renderArticle();
 getRandomQuote();
 quoteBox.on('click', 'button', answer)
 main
