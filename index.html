@@ -19,41 +19,26 @@
             <a href="#weather">Weather</a>
         </nav>
     </main>
-
-    <div class="container" id="jungFood">
-
-        <body style="text-align:center;">
-
-            <h1 style="color: palevioletred;">JUNG FOOD 🤓🍔</h1>
-            <h2>What should Jung eat today?</h2>
-
-            <p id = "jung" style="font-size: 15px; font-weight: bold;" >Ask Jung what he eat today and if he says "nothing" Suggest the meal generated below</p>
-            <button id = "button" class="btn" onclick = "GFG_Fun()">
-                click here
-            </button>
-            <p id = "Jung2" style ="font-size: 24px; font-weight: bold; color: palevioletred;">
-            </p>
-
-        <script>
-            var up = document.getElementById('Jung');
-            var down = document.getElementById('Jung2');
-         
-            var arr = ["Rice with spam🥫", "Rice with Kimchi stew🍚🥬", "Rice with Mapo tofu🍚🧈", "Rice with Seaweed soup🍚🍲🚣🌿", "Sushi🍣", "Rice with ramen🍚🍜", "Omelette        Rice🥚🍚🥢", "Protien Bar💪🍫"];
-         
-            up = "Click on the button to check "
-               + "the type of element.<br><br>" + arr;
-         
-            function GFG_Fun() {
-                down.innerHTML =
-                    arr[Math.floor(Math.random() * arr.length)];
-                
-        }
-        </script>
-        <a href="jung yoon.jpg"></a>
-        <img src="jung yoon.jpg" alt="My Sample Image" width="200">
-    </div>
-
     <body>
+        <div class="container" id="jungFood">
+
+            <body style="text-align:center;">
+
+                <h1 style="color: palevioletred;">JUNG FOOD 🤓🍔</h1>
+                <h2>What should Jung eat today?</h2>
+
+                <p id = "jung" style="font-size: 15px; font-weight: bold;" >Ask Jung what he eat today and if he says "nothing" Suggest the meal generated below</p>
+                <button id = "jungBtn" class="btn">
+                    click here
+                </button>
+                <p id = "Jung2" style ="font-size: 24px; font-weight: bold; color: palevioletred;">
+                </p>
+
+            <a href="jung yoon.jpg"></a>
+            <img src="jung yoon.jpg" alt="My Sample Image" width="200">
+        </div>
+
+    
 
         <main class="container" id="news">
             <div class="col-med-10" id="newsBlock">

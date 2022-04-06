@@ -50,3 +50,9 @@ main nav {
 main nav a {
     color: black;
 }
+ul {
+    list-style: none;
+}
+#jungBtn {
+    background-color: black;
+}
