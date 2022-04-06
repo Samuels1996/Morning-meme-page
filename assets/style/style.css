@@ -1,5 +1,5 @@
 
-.btn {
+.btn1 {
     grid column: span 2;
     background-color: transparent;
     border: 2px solid white;
@@ -50,4 +50,8 @@ main nav {
 
 main nav a {
     color: black;
+}
+
+.modal-dialog {
+    transition: none!important;
 }

@@ -22,6 +22,11 @@ function currentWeather () {
                 var icon = data.weather[0].icon;
                 var todayWeather = [cityName, humidity, windSpeed, longitude, latitude, temperature, icon]
 
+                
+                console.log(todayWeather)
+                console.log(currentWeather)
+
+
 
                 $('.cityNames').innerHTML = cityName;
                 $('.humidity').innerHTML = humidity + '%';
