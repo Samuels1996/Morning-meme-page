@@ -65,16 +65,27 @@ feature/news
         </div>
     </main>
 
+    <aside>
+        <div class="side">
+            <h2>Search for City:</h2>
+            <input type="text" id="city-name" placeholder="San Diego" />
+            <button id="searchBtn">Search</button>
+            <hr>
+            <div class="history"></div>
+        </div>
+   
     
-    <aside class="col-sm-12">
-        <h2>Local weather</h2>
-        <input type="text" placeholder="Atlanta">
-        <button id="searchBtn">Search</button>
-        <hr>
+        <div>
+          <h3 class="cityNames">Atlanta</h3>
+          <img src='http://openweathermap.org/img/wn/10d@2x.png' alt='Current Weather' class="currentIcon">
+          <ul>
+            <li class="date">Todays Date</li>
+            <li class="nowTemp">Current Temp.</li>
+            <li class="humidity">Humidity</li>
+            <li class="windSpeed">Wind Speed</li>
+          </ul>
+        </div>
     </aside>
-    
-    
-    
     <main class="container"></main>
 
  main
