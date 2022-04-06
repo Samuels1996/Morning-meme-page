@@ -1,7 +1,14 @@
-//feature/news
-    
-    //if random number greater than 50, run this function.
-    //if less than, run the other function
+
+const food = [
+    "Rice with spam",
+    "Rice with Kimchi stew",
+    "Rice with mapo tofu",
+    "Rice with seaweed soup",
+    "Sushi",
+    "Rice with ramen",
+    "Omelette Rice",
+    "Protien Bar",
+];
 
 
 function renderArticle() {
@@ -37,7 +44,6 @@ function renderArticle() {
 };
 
 //function renderOnionArticle();
-
 
 
 var quoteBox = $('#quoteBox');
@@ -116,7 +122,9 @@ function saveScores(Kscore, Tscore) {
     localStorage.setItem("trump", Tscore);
     localStorage.setItem('kanye', Kscore);
 }
-renderArticle();
+
 getRandomQuote();
 quoteBox.on('click', 'button', answer)
-main
+
+renderArticle();
+

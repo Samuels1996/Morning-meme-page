@@ -1,7 +1,36 @@
+
+.btn {
+    grid column: span 2;
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    padding:.5rem 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 1rem;
+
+}
+.btn:hover {
+    background-color: #FFFFFF33;
+}
+.container {
+    background-color: palevioletred;
+    padding: 3rem;
+    border-radius: 1rem;
+    border: 2px solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+body{
+    background-color:white;
+=======
 aside {
     text-align: right;
 }
 
 aside h2 {
     padding: 0px 30px;
+
 }
