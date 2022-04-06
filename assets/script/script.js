@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-=======
-
->>>>>>> 01d41384c561efa8fa21c55ecec06dac7f3af534
 const food = [
     "Rice with spam",
     "Rice with Kimchi stew",

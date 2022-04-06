@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-=======
-
->>>>>>> 01d41384c561efa8fa21c55ecec06dac7f3af534
 .btn {
     grid column: span 2;
     background-color: transparent;
@@ -14,10 +10,10 @@
 
 }
 .btn:hover {
-    background-color: #FFFFFF33;
+    background-color: #f56d91;
 }
 .container {
-    background-color: palevioletred;
+    background-color: #dfdfde;
     padding: 3rem;
     border-radius: 1rem;
     border: 2px solid;
@@ -27,10 +23,9 @@
     flex-direction: column;
 }
 body{
-    background-color:white;
-<<<<<<< HEAD
-=======
-=======
+    background-color: #247881;;
+}
+
 aside {
     text-align: right;
 }
@@ -38,5 +33,4 @@ aside {
 aside h2 {
     padding: 0px 30px;
 
->>>>>>> 01d41384c561efa8fa21c55ecec06dac7f3af534
 }
