@@ -23,7 +23,7 @@
     flex-direction: column;
 }
 body{
-    background-color: #247881;;
+    background-color:white;
 }
 
 aside {
@@ -33,4 +33,20 @@ aside {
 aside h2 {
     padding: 0px 30px;
 
+}
+
+main h1 {
+    text-align: left;
+    font-size: 60px;
+    margin: 10px 80px;
+}
+
+main nav {
+    text-align: right;
+    padding: 0 300px;
+    font-size: 40px;
+}
+
+main nav a {
+    color: black;
 }
