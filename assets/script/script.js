@@ -130,5 +130,5 @@ function saveScores(Kscore, Tscore) {
 getRandomQuote();
 quoteBox.on('click', 'button', answer)
 
-renderArticle();
+renderArticle()
 
