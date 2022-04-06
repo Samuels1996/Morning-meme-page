@@ -1,5 +1,5 @@
 .btn {
-    grid column: span 2;
+    grid-column: span 2;
     background-color: transparent;
     border: 2px solid white;
     color: white;
