@@ -3,9 +3,8 @@ var searchBtnEl = $("#searchBtn")
 var today = moment();
 $('.date').text(today.format('L'))
 
-function currentWeather () {
-    // var url1 = 'https://api.openweathermap.org/data/2.5/weather?q=' + city + '&units=imperial&appid=' + apiKey;
-    var city = $('#city-name').val();
+function currentWeather (city) {
+   
     
     fetch('https://api.openweathermap.org/data/2.5/weather?q=' + city + '&units=imperial&appid=' + apiKey)
         .then(function (response) {
@@ -16,23 +15,14 @@ function currentWeather () {
                 var cityName = data.name;
                 var humidity = data.main.humidity;
                 var windSpeed = data.wind.speed;
-                var longitude = data.coord.lon;
-                var latitude = data.coord.lat;
                 var temperature = data.main.temp;
                 var icon = data.weather[0].icon;
-                var todayWeather = [cityName, humidity, windSpeed, longitude, latitude, temperature, icon]
 
-                
-                console.log(todayWeather)
-                console.log(currentWeather)
-
-
-
-                $('.cityNames').innerHTML = cityName;
-                $('.humidity').innerHTML = humidity + '%';
-                $('.nowTemp').innerHTML = temperature +'°F';
-                $('.currentIcon').src = 'http://openweathermap.org/img/wn/' + icon + '@2x.png';
-                $('.windSpeed').innerHTML = windSpeed +'mph';
+                $('.cityNames').text(cityName);
+                $('.humidity').text('Humidity: ' + humidity + '%');
+                $('.nowTemp').text('Temp: ' + temperature +'°F');
+                $('.currentIcon').attr('src','http://openweathermap.org/img/wn/' + icon + '@2x.png');
+                $('.windSpeed').text('Wind Speed: ' + windSpeed +'mph');
 
               
             })
@@ -40,4 +30,9 @@ function currentWeather () {
     };
 
     var searchBtnEl = $('#searchBtn');
-    searchBtnEl.on('click', currentWeather)
+    searchBtnEl.on('click', function(e) {
+        e.preventDefault;
+        var city = $('#city-name').val();
+        currentWeather(city);
+        $('#city-name').val('')
+    })

@@ -1,6 +1,5 @@
-
-.btn1 {
-    grid column: span 2;
+.btn {
+    grid-column: span 2;
     background-color: transparent;
     border: 2px solid white;
     color: white;
@@ -11,10 +10,10 @@
 
 }
 .btn:hover {
-    background-color: #FFFFFF33;
+    background-color: #e7fbbe;
 }
 .container {
-    background-color: palevioletred;
+    background-color: #fffdde;
     padding: 3rem;
     border-radius: 1rem;
     border: 2px solid;
@@ -24,7 +23,7 @@
     flex-direction: column;
 }
 body{
-    background-color:white;
+    background-color: #d9d7f1;;
 }
 
 aside {
@@ -54,4 +53,10 @@ main nav a {
 
 .modal-dialog {
     transition: none!important;
+}
+ul {
+    list-style: none;
+}
+#jungBtn {
+    background-color: black;
 }
