@@ -12,11 +12,6 @@ const food = [
 
 
 function renderArticle() {
-    //if random number greater than 50, run this function.
-    //if less than, run the other function
-}
-
-function renderArticle() {
     
 
     fetch('https://api.thenewsapi.com/v1/news/top?api_token=DXwhOvJHaGZy15HN6l9GPYBKRvAPc0BDJPDLBNJI&locale=us&limit=5')
@@ -127,6 +122,7 @@ function saveScores(Kscore, Tscore) {
     localStorage.setItem("trump", Tscore);
     localStorage.setItem('kanye', Kscore);
 }
+
 getRandomQuote();
 quoteBox.on('click', 'button', answer)
 
