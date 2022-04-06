@@ -30,7 +30,7 @@
          
         var arr = ["Rice with spam🥫", "Rice with Kimchi stew🍚🥬", "Rice with Mapo tofu🍚🧈", "Rice with Seaweed soup🍚🍲🚣🌿", "Sushi🍣", "Rice with ramen🍚🍜", "Omelette Rice🥚🍚🥢", "Protien Bar💪🍫"];
          
-        up.innerHTML = "Click on the button to check "
+        up = "Click on the button to check "
                + "the type of element.<br><br>" + arr;
          
         function GFG_Fun() {
@@ -46,9 +46,9 @@
 <body>
 
     <main class="container">
-        <div class="col-med-10" id="newsBlock">
-            <h1> Your Daily News(?)</h1>
-            <div id="newsImage"></div>
+        <div class="col-med-10 justify-content-center" id="newsBlock">
+            <h1 id="newsHeaderTag"> Your Daily News</h1>
+            <div class="img" id="newsImage"></div>
             <h2 id="newsTitle"></h2>
             <h6 id="snippet"></h6>
             <div id="newsUrl"></div>
@@ -65,7 +65,7 @@
         </div>
     </main>
 
-    <aside class="container">
+    <aside>
         <div class="side">
             <h2>Search for City:</h2>
             <input type="text" id="city-name" placeholder="San Diego" />
@@ -86,6 +86,7 @@
           </ul>
         </div>
     </aside>
+    <main class="container"></main>
 
  
 

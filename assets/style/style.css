@@ -25,6 +25,7 @@
 }
 body{
     background-color:white;
+}
 =======
 aside {
     text-align: right;
@@ -33,4 +34,8 @@ aside {
 aside h2 {
     padding: 0px 30px;
 
+}
+
+#newsHeaderTag {
+    text-decoration: underline;
 }

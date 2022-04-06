@@ -37,7 +37,8 @@ function renderArticle() {
             newsImageId.appendChild(img);
             titleId.textContent = data.data[i].title;
             snipId.textContent = data.data[i].snippet;
-            urlId.textContent = data.data[i].url
+            urlId.textContent = data.data[i].url;
+           
            }
            getRandomArticle();
         })
@@ -126,5 +127,5 @@ function saveScores(Kscore, Tscore) {
 getRandomQuote();
 quoteBox.on('click', 'button', answer)
 
-renderArticle()
+renderArticle();
 
