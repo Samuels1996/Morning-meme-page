@@ -9,11 +9,9 @@ function currentWeather () {
     
     fetch('https://api.openweathermap.org/data/2.5/weather?q=' + city + '&units=imperial&appid=' + apiKey)
         .then(function (response) {
-            console.log(response);
             return response.json();
         })
             .then(function(data) {
-                console.log(data);
                 
                 var cityName = data.name;
                 var humidity = data.main.humidity;
@@ -24,14 +22,12 @@ function currentWeather () {
                 var icon = data.weather[0].icon;
                 var todayWeather = [cityName, humidity, windSpeed, longitude, latitude, temperature, icon]
 
-                console.log(todayWeather)
-                console.log(currentWeather)
 
-                document.querySelector('.cityNames').innerHTML = cityName;
-                document.querySelector('.humidity').innerHTML = humidity + '%';
-                document.querySelector('.nowTemp').innerHTML = temperature +'°F';
-                document.querySelector('.currentIcon').src = 'http://openweathermap.org/img/wn/' + icon + '@2x.png';
-                document.querySelector('.windSpeed').innerHTML = windSpeed +'mph';
+                $('.cityNames').innerHTML = cityName;
+                $('.humidity').innerHTML = humidity + '%';
+                $('.nowTemp').innerHTML = temperature +'°F';
+                $('.currentIcon').src = 'http://openweathermap.org/img/wn/' + icon + '@2x.png';
+                $('.windSpeed').innerHTML = windSpeed +'mph';
 
               
             })
