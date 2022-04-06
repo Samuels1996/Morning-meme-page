@@ -1,4 +1,3 @@
-
 const food = [
     "Rice with spam",
     "Rice with Kimchi stew",
