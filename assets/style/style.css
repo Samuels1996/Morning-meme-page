@@ -13,6 +13,7 @@
     background-color: #e7fbbe;
 }
 .container {
+    margin-bottom: 8px;
     background-color: #fffdde;
     padding: 3rem;
     border-radius: 1rem;
@@ -58,4 +59,10 @@ main nav {
 
 main nav a {
     color: black;
+}
+ul {
+    list-style: none;
+}
+#jungBtn {
+    background-color: black;
 }
