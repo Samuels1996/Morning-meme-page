@@ -26,7 +26,7 @@
 body{
     background-color:white;
 }
-=======
+
 
 aside {
     text-align: right;
@@ -40,6 +40,11 @@ aside h2 {
 #newsHeaderTag {
     text-decoration: underline;
 }
+
+#newsImage {
+    width: 600px;
+}
+
 main h1 {
     text-align: left;
     font-size: 60px;
