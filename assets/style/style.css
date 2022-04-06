@@ -50,6 +50,10 @@ main nav {
 main nav a {
     color: black;
 }
+
+.modal-dialog {
+    transition: none!important;
+}
 ul {
     list-style: none;
 }
