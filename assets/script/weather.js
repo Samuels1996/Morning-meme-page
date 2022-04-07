@@ -2,7 +2,8 @@ var apiKey ='7adddd61a6c99ba40eb99e6a48cd59a1'
 var searchBtnEl = $("#searchBtn")
 var today = moment();
 $('.date').text(today.format('L'))
-
+var date = $('<span>').text(" " + today.format('L'))
+$("#title").append(date);
 function currentWeather (city) {
    
     

@@ -1,18 +1,3 @@
-const food = [
-    "Rice with spam",
-    "Rice with Kimchi stew",
-    "Rice with mapo tofu",
-    "Rice with seaweed soup",
-    "Sushi",
-    "Rice with ramen",
-    "Omelette Rice",
-    "Protien Bar",
-    "Pizza",
-    "Cheeseburger",
-    "Tacos",
-    "Doughnut"
-];
-
 function renderArticle() {
 
     fetch('https://api.thenewsapi.com/v1/news/top?api_token=DXwhOvJHaGZy15HN6l9GPYBKRvAPc0BDJPDLBNJI&locale=us&limit=5')
@@ -132,5 +117,5 @@ function GFG_Fun() {
 getRandomQuote();
 quoteBox.on('click', 'button', answer)
 jungBtn.on('click', GFG_Fun);   
-renderArticle();
 
+renderArticle()
