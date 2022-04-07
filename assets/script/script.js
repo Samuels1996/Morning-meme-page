@@ -7,10 +7,6 @@ const food = [
     "Rice with ramen",
     "Omelette Rice",
     "Protien Bar",
-    "Pizza",
-    "Cheeseburger",
-    "Tacos",
-    "Doughnut"
 ];
 
 
@@ -125,7 +121,7 @@ function saveScores(Kscore, Tscore) {
 var up = $('#Jung');
 var down = $('#Jung2');
 var jungBtn = $('#jungBtn');
-var arr = ["Rice with spam🥫", "Rice with Kimchi stew🍚🥬", "Rice with Mapo tofu🍚🧈", "Rice with Seaweed soup🍚🍲🚣🌿", "Sushi🍣", "Rice with ramen🍚🍜", "Omelette Rice🥚🍚🥢", "Protien Bar💪🍫","Pizza🍕","Cheeseburger🍔","Tacos🌮","doughnut🍩"];
+var arr = ["Rice with spam🥫", "Rice with Kimchi stew🍚🥬", "Rice with Mapo tofu🍚🧈", "Rice with Seaweed soup🍚🍲🚣🌿", "Sushi🍣", "Rice with ramen🍚🍜", "Omelette Rice🥚🍚🥢", "Protien Bar💪🍫"];
          
          
 function GFG_Fun() {            
