@@ -138,3 +138,4 @@ jungBtn.on('click', GFG_Fun);
 
 renderArticle()
 
+
