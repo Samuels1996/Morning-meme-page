@@ -13,7 +13,6 @@ const food = [
     "Doughnut"
 ];
 
-
 function renderArticle() {
 
     fetch('https://api.thenewsapi.com/v1/news/top?api_token=DXwhOvJHaGZy15HN6l9GPYBKRvAPc0BDJPDLBNJI&locale=us&limit=5')
@@ -25,26 +24,25 @@ function renderArticle() {
         })
         .then(function (data) {
             
-            var img = $("<img>");
+            var img = document.createElement('img');
            function getRandomArticle() {
                i = Math.floor(Math.random() * 5);
             
-            newsImageId = $("#newsImage");
-            var titleId = $("#newsTitle");
-            var snipId = $("#snippet");
-            var urlId = $("#newsUrl");
+            newsImageId = document.getElementById("newsImage");
+            var titleId = document.getElementById("newsTitle");
+            var snipId = document.getElementById("snippet");
+            var urlId = document.getElementById("newsUrl");
             
             img.src = data.data[i].image_url;
             newsImageId.append(img);
             titleId.textContent = data.data[i].title;
             snipId.textContent = data.data[i].snippet;
-            urlId.textContent = data.data[i].url
+            urlId.textContent = data.data[i].url;
+           
            }
            getRandomArticle();
         })
 };
-
-
 
 var quoteBox = $('#quoteBox');
 var person;
@@ -126,8 +124,7 @@ var up = $('#Jung');
 var down = $('#Jung2');
 var jungBtn = $('#jungBtn');
 var arr = ["Rice with spam🥫", "Rice with Kimchi stew🍚🥬", "Rice with Mapo tofu🍚🧈", "Rice with Seaweed soup🍚🍲🚣🌿", "Sushi🍣", "Rice with ramen🍚🍜", "Omelette Rice🥚🍚🥢", "Protien Bar💪🍫","Pizza🍕","Cheeseburger🍔","Tacos🌮","doughnut🍩"];
-         
-         
+           
 function GFG_Fun() {            
     down.text(arr[Math.floor(Math.random() * arr.length)]);              
 }
@@ -135,6 +132,5 @@ function GFG_Fun() {
 getRandomQuote();
 quoteBox.on('click', 'button', answer)
 jungBtn.on('click', GFG_Fun);   
-
-renderArticle()
+renderArticle();
 
