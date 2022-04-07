@@ -1,3 +1,5 @@
+
+// Tis section of code is a generator for current day weather pulled from an open weather API
 var apiKey ='7adddd61a6c99ba40eb99e6a48cd59a1'
 var searchBtnEl = $("#searchBtn")
 var today = moment();
