@@ -6,7 +6,7 @@ const food = [
     "Sushi",
     "Rice with ramen",
     "Omelette Rice",
-    "Protien Bar",
+    "Protein Bar",
     "Pizza",
     "Cheeseburger",
     "Tacos",
