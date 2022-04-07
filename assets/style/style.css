@@ -77,19 +77,18 @@ aside h2 {
     color: rgba(54, 54, 224, 0.829);
 }
 
-body h1 {
+main h1 {
     text-align: left;
     font-size: 60px;
     margin: 10px 80px;
 }
 
-body nav {
+main nav {
     text-align: right;
     padding: 0 300px;
     font-size: 40px;
 }
-
-body nav a {
+main nav a {
     color: black;
 }
 
@@ -103,9 +102,4 @@ ul {
 
 #jungBtn {
     background-color: black;
-}
-
-#darkBtn {
-    border-radius: 30%;
-
 }
