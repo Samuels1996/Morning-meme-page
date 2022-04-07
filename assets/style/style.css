@@ -37,6 +37,7 @@ aside h2 {
 
 }
 
+
 #newsHeaderTag {
     text-decoration: underline;
 }
@@ -84,7 +85,6 @@ main nav {
     text-align: right;
     font-size: 40px;
 }
-
 main nav a {
     color: black;
 }

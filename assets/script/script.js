@@ -1,3 +1,4 @@
+// The following line of code is going to be pulling the news articles from the API
 function renderArticle() {
 
     fetch('https://api.thenewsapi.com/v1/news/top?api_token=DXwhOvJHaGZy15HN6l9GPYBKRvAPc0BDJPDLBNJI&locale=us&limit=5')
@@ -29,6 +30,7 @@ function renderArticle() {
         })
 };
 
+// The following code is the generator for the trump and kanye quotes. It is utilizing two different APIs for the function
 var quoteBox = $('#quoteBox');
 var person;
 var TrumpScoreCounter = localStorage.getItem('trump') || 0;
@@ -105,6 +107,8 @@ function saveScores(Kscore, Tscore) {
     localStorage.setItem("trump", Tscore);
     localStorage.setItem('kanye', Kscore);
 }
+
+// The following section is a random lunch generator for Jung.
 var up = $('#Jung');
 var down = $('#Jung2');
 var jungBtn = $('#jungBtn');
