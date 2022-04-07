@@ -13,9 +13,7 @@
 .btn:hover {
     background-color: #e7fbbe;
 }
-
-.container {
-    margin-bottom: 8px;
+.box {
     background-color: #fffdde;
     padding: 3rem;
     border-radius: 1rem;
@@ -85,7 +83,6 @@ main h1 {
 
 main nav {
     text-align: right;
-    padding: 0 300px;
     font-size: 40px;
 }
 main nav a {
