@@ -14,7 +14,7 @@
     background-color: #e7fbbe;
 }
 .box {
-    background-color: #fffdde;
+    background-color: #2a9599;
     padding: 3rem;
     border-radius: 1rem;
     border: 2px solid;
@@ -25,8 +25,9 @@
 }
 
 body{
-    background-color: #d9d7f1;;
+    background: linear-gradient(to bottom right, #676aee, black );
 }
+/* //How yo do a liner gradient background? */
 
 aside {
     text-align: right;
@@ -99,4 +100,8 @@ ul {
 
 #jungBtn {
     background-color: black;
+}
+
+.footer-text{
+    color: white;
 }
